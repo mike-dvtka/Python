@@ -6,7 +6,8 @@ class RotN:
     def __init__(self, number):
         self.n = number
 
-    def crypt(self, line):
+    def crypt(self, strLine):
+        line = strLine.split()
         for i in range(len(line)):
             word = ""
             for j in range(len(line[i])):
@@ -23,9 +24,11 @@ class RotN:
                         break
                 word += c
             line[i] = word
+        line = " ".join(line)
         return line
 
-    def decrypt(self, line):
+    def decrypt(self, strLine):
+        line = strLine.split()
         for i in range(len(line)):
             word = ""
             for j in range(len(line[i])):
@@ -49,4 +52,5 @@ class RotN:
                             break
                 word += c
             line[i] = word
+        line = " ".join(line)
         return line

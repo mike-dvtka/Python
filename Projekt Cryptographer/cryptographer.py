@@ -5,18 +5,12 @@ class Cryptographer:
         fileOut = open(str(fileNameOut) + ".txt", "w+")
 
         for line in fileIn:
-            strLine = line.split()
             if encrypt:
-                word = algorithm.crypt(strLine)
+                word = algorithm.crypt(line.strip())
             else:
-                word = algorithm.decrypt(strLine)
-            word = strLine
-            for i in range(len(word)):
-                if i+1 == len(word):
-                    fileOut.write(word[i])
-                else:
-                    fileOut.write(word[i]+" ")
-            fileOut.write("\n")
+                word = algorithm.decrypt(line.strip())
+
+            fileOut.write(word+"\n")
 
         fileIn.close()
         fileOut.close()
