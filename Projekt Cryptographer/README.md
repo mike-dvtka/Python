@@ -10,12 +10,13 @@
   <li>W konsoli pojawi się menu, wystarczy wpisać odpowiednia cyfrę i program wykona dane zadanie.</li>
 </ol>
 
-<h3>!WAŻNE!</h3>
-Program nie obsługuje polskich znaków (działa na alfabecie angielskim który składa się z 26 znaków)!<br>
-Nie trzeba zamykać programu żeby zobaczyć plik wyjściowy z zaszyfrowanym/odszyfrowanym tekstem!
+<h3>WAŻNE</h3>
+Program nie obsługuje polskich znaków (działa na alfabecie angielskim który składa się z 26 znaków).<br>
+Nie trzeba zamykać programu żeby zobaczyć plik wyjściowy z zaszyfrowanym/odszyfrowanym tekstem.<br>
+Program jest napisany tak, że można do niego dodać dowolny inny algorytm. Musi mieć on jednak 2 metody, jedną o nazwie crypt() do szyfrowania linii tekstu, a drugą o nazwie decrypt() do deszyfrowania linii tekstu.
 
 <h3>Struktura:</h3>
-4 pliki
+4 pliki<br>
 
  -<b>main.py</b> - główny plik, zawiera w sobie zmienną globalną N która odpowiada za liczbę w przesunięciu ROT. 
 Jest ona ustawiona na wartośc 13 (dzięki czemu mamy szyfrowanie/deszyfrowanie za pomocą ROT13), ale po zmianie na inną wartość np. 9
@@ -29,5 +30,3 @@ Następnie mamy już klasy z odpowiednimi algorytmami. Te klasy mają podobną b
  -<b>rot_n.py</b> - klasa która realizuje algorytm ROT_N bazujący na algorytmie ROT13 (https://pl.wikipedia.org/wiki/ROT13), ale udoskonalony o dowolną liczbę przesunięcia. Za tą liczbę przesunięcia odpowiada zmienna globalna N w 5 linii w pliku main.py.
 
  -<b>polybius.py</b> - klasa która realizuje algorytm szyfrowania za pomocą szachownicy Polibiusza (https://pl.wikipedia.org/wiki/Szachownica_Polibiusza). W mojej wersji rozdzieliłem litery I i J na dwa osobne pola oraz dodałem pole na spację, przez co moja "szachownica" nie ma rozmiaru 5x5 jak w oryginale tylko 5x5 + 1x2. Ta mała modyfikacja nie zmieniła zasady działania.
-
-<h4>Program jest napisany tak, że można do niego dodać dowolny inny algorytm. Musi mieć on jednak 2 metody, jedną o nazwie crypt() do szyfrowania linii tekstu, a drugą o nazwie decrypt() do deszyfrowania linii tekstu.</h4>
