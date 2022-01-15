@@ -1,4 +1,4 @@
-<h1>Projekt: algorytmy szyfrujące (Project Cryptographer)</h1>
+<h1>Projekt: algorytmy szyfrujące (Projekt Cryptographer)</h1>
 <h2>Autor: Michał Dutka</h2>
 
 <h3>Uruchamianie:</h3>
