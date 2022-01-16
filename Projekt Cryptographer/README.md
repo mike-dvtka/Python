@@ -27,6 +27,6 @@ Potem już jest tylko pętla dla interfejsu tekstowego która dla odpowiednich i
 
 Następnie mamy już klasy z odpowiednimi algorytmami. Te klasy mają podobną budowę, to znaczy obie mają i muszą mieć metody crypt() i decrypt() (muszą je mieć bo do tych metod odwołuje się metoda w klasie cryptographer.py). Metoda crypt() służy do szyfrowania tekstu, a metoda decrypt() służy do odszyfrowania tekstu.
 
- -<b>rot_n.py</b> - klasa która realizuje algorytm ROT_N bazujący na algorytmie ROT13 (https://pl.wikipedia.org/wiki/ROT13), ale udoskonalony o dowolną liczbę przesunięcia. Za tą liczbę przesunięcia odpowiada zmienna globalna N w 5 linii w pliku main.py.
+ -<b>rot_n.py</b> - klasa która realizuje algorytm ROT_N bazujący na algorytmie ROT13 (https://pl.wikipedia.org/wiki/ROT13), ale pozwalający na dowolną liczbę przesunięcia. Za tą liczbę przesunięcia odpowiada zmienna globalna N w 5 linii w pliku main.py.
 
  -<b>polybius.py</b> - klasa która realizuje algorytm szyfrowania za pomocą szachownicy Polibiusza (https://pl.wikipedia.org/wiki/Szachownica_Polibiusza). W mojej wersji rozdzieliłem litery I i J na dwa osobne pola oraz dodałem pole na spację, przez co moja "szachownica" nie ma rozmiaru 5x5 jak w oryginale tylko 5x5 + 1x2. Ta mała modyfikacja nie zmieniła zasady działania.
